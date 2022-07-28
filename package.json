@@ -11,6 +11,8 @@
   },
   "dependencies": {
     "disklet": "^0.5.2",
+    "edge-core-js": "^0.19.25",
+    "edge-login-ui-rn": "^0.10.7",
     "eslint-config-standard-kit": "^0.15.1",
     "eslint-plugin-import": "^2.26.0",
     "eslint-plugin-node": "^11.1.0",
