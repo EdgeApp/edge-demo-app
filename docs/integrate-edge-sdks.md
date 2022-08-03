@@ -1,24 +1,34 @@
 # Integrate Edge SDKs
 
-Now, it's time to implement two Edge SDKs:
-- `edge-login-ui-rn`: this is a package that provides an out-of-box login/signup component.
-- `edge-core-js`: this is the engine of Edge that handles all account and wallet creation, user authentication, management of transaction data,
+Now, it's time to integrate two Edge SDKs:
+- [`edge-login-ui-rn`](https://github.com/EdgeApp/edge-login-ui-rn): this is a package that provides an out-of-box login/signup component.
+- [`edge-core-js`](https://github.com/EdgeApp/edge-core-js): this is the engine of Edge that handles all account and wallet creation, user authentication, management of transaction data,
 encryption, and synchronization across devices, learn more about it in our [white paper](https://edge.app/wp-content/uploads/2019/01/Edge-White-Paper-01-22-2019.pdf?af=edge-app-wp-admin-post-php&af=edge-app).
 
 To begin, simply install the two SDKs:
 ```
-yarn add edge-core-js edge-login-ui-rn 
+yarn add edge-core-js edge-login-ui-rn
 ```
+
+## Edge Login UI React Native
+This package provides a wrapper [`<LoginUIProvider>`](https://github.com/EdgeApp/edge-login-ui-rn/blob/21324d47f3ea5d886b229d534fcfd84a4e01e0b7/src/components/publicApi/LoginUiProvider.tsx) that provides theming, which can be used with an out-of-box UI component [`<LoginScreen />`](https://github.com/EdgeApp/edge-login-ui-rn/blob/d1eeb350cff706c5316920df729b099dc951dd29/src/components/publicApi/PublicLoginScreen.tsx) that handles the login/signup logics.
+
+## Edge Core
+The core library provides `EdgeAccount` and `EdgeContext`, two core objects, for the entire app to consume. The [account object](https://github.com/EdgeApp/edge-core-js/blob/2b96ab85fc62873055c4910278f601209852f815/src/core/account/account-api.js#L97) has lots of properties and methods. For example, you can get the username of the current user account by referencing `edgeAccount.username`. To log out an account, call `edgeAccount.logout()`.
+
+The [context object](https://github.com/EdgeApp/edge-core-js/blob/2b96ab85fc62873055c4910278f601209852f815/src/core/context/context-api.js#L41) manages accounts, including account creations, logins, etc.
+
+Both `EdgeAccount` and `EdgeContext` provide `on` and `watch` properties that allow you to listen to any changes to the objects. Learn more about `on` and `watch` [here](https://github.com/EdgeApp/yaob#watching-properties).
 
 ## UI
 
 Basically, we need to wrap our whole app with a `LoginUIProvider` component to use the `LoginScreen` component.
 
-Inside `LoginUIProvider`, we want to inject the `MakeEdgeContext` component to make the Edge context and account available to the rest of the app. 
+Inside `LoginUIProvider`, we want to inject the `MakeEdgeContext` component to make the Edge context and account available to the rest of the app.
 
 In `./src/App.tsx`, replace everything with:
 
-```ts
+```js
 import { EdgeAccount, EdgeContext, MakeEdgeContext } from 'edge-core-js'
 import { LoginScreen, LoginUiProvider } from 'edge-login-ui-rn'
 import * as React from 'react'
@@ -71,7 +81,7 @@ export default App
 The `MainUI` is basically what your app looks like after the user has logged in.
 
 Let's create a `MainUI.tsx` under `src`, and fill it with:
-```ts
+```js
 import { EdgeAccount } from 'edge-core-js'
 import * as React from 'react'
 import { Button, SafeAreaView, Text } from 'react-native'
@@ -87,35 +97,9 @@ interface Props {
 const MainUI = (props: Props) => {
   const { edgeAccount, onLogout } = props
 
-  // We expect to have an Ethereum wallet in the account:
-  const walletInfo = edgeAccount.getFirstWalletInfo('wallet:ethereum')
-
-  // Create an Ethereum wallet at login if we don't have one:
-  React.useEffect(() => {
-    if (walletInfo == null)
-      edgeAccount.createCurrencyWallet('wallet:ethereum', {
-        name: 'My First Wallet',
-        fiatCurrencyCode: 'iso:USD'
-      })
-  }, [edgeAccount])
-
-  // Watch the list of loaded wallets.
-  // Wallets begin loading after the login is complete,
-  // so it always takes time for our wallet to appear:
-  const [wallets, setWallets] = React.useState(edgeAccount.currencyWallets)
-  React.useEffect(
-    () => edgeAccount.watch('currencyWallets', setWallets),
-    [edgeAccount]
-  )
-
-  // Find our wallet in the list (might not be there at first):
-  const wallet = walletInfo == null ? undefined : wallets[walletInfo.id]
-
   return (
     <SafeAreaView style={{ alignItems: 'center' }}>
       <Text>Username: {edgeAccount.username}</Text>
-      <Text>Wallet name: {wallet?.name}</Text>
-      <Text>Wallet Balance: {wallet?.balances?.ETH}</Text>
       <Button title="Log Out" onPress={onLogout} />
     </SafeAreaView>
   )
@@ -124,8 +108,6 @@ const MainUI = (props: Props) => {
 export default MainUI
 ```
 
-At the root directory, run `(cd ios && pod install)` to effectuate these changes for the iOS project. 
+At the root directory, run `(cd ios && pod install)` to effectuate these changes for the iOS project.
 
 That is it! You can now build and test the app.
-
-Note that once you've logged in, there's nothing after "Wallet name:" and "Wallet Balance:", that because we haven't integrated currency plugins into our app. We will do that in the very next step!
