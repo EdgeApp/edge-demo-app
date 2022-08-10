@@ -14,13 +14,13 @@ const MainUI = (props: Props) => {
   const { edgeAccount, onLogout } = props
 
   // We expect to have an Ethereum wallet in the account:
-  const walletInfo = edgeAccount.getFirstWalletInfo('wallet:ethereum')
+  const walletInfo = edgeAccount.getFirstWalletInfo('wallet:bitcoin')
 
   // Create an Ethereum wallet at login if we don't have one:
   React.useEffect(() => {
     if (walletInfo == null)
-      edgeAccount.createCurrencyWallet('wallet:ethereum', {
-        name: 'My First Wallet',
+      edgeAccount.createCurrencyWallet('wallet:bitcoin', {
+        name: 'My First Bitcoin Wallet',
         fiatCurrencyCode: 'iso:USD'
       })
   }, [edgeAccount])
@@ -41,7 +41,7 @@ const MainUI = (props: Props) => {
     <SafeAreaView style={{ alignItems: 'center' }}>
       <Text>Username: {edgeAccount.username}</Text>
       <Text>Wallet name: {wallet?.name}</Text>
-      <Text>Wallet Balance: {wallet?.balances?.ETH}</Text>
+      <Text>Wallet Balance: {wallet?.balances?.BTC}</Text>
       <Button title="Log Out" onPress={onLogout} />
     </SafeAreaView>
   )

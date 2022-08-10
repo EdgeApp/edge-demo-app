@@ -25,6 +25,9 @@ const App = () => {
         // Get this from our support team:
         apiKey="0b5776a91bf409ac10a3fe5f3944bf50417209a0"
         appId="com.mydomain.myapp"
+        // Load currencies:
+        pluginUris={['edge-core/plugin-bundle.js']}
+        plugins={{ethereum: true, bitcoin: true}}
         // Called when the core is done loading:
         onLoad={setEdgeContext}
         onError={showError}

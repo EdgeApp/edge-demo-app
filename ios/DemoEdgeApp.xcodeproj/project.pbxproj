@@ -11,8 +11,9 @@
 		13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
-		6172F2D35A4C3AA820D92908 /* libPods-DemoEdgeApp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6423831EA8574132BED9D8CC /* libPods-DemoEdgeApp.a */; };
-		7EF68E3733C33B6898317E18 /* libPods-DemoEdgeApp-DemoEdgeAppTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ABFE59519B596E51CEFDCCC0 /* libPods-DemoEdgeApp-DemoEdgeAppTests.a */; };
+		3CECE6EB2DB012B8DDB2FEDE /* libPods-DemoEdgeApp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D22B6882A9D1A0A478C4BC1B /* libPods-DemoEdgeApp.a */; };
+		5153B704D470B8D7A66DB2D0 /* libPods-DemoEdgeApp-DemoEdgeAppTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 316E34985E1CB571BD8CCF96 /* libPods-DemoEdgeApp-DemoEdgeAppTests.a */; };
+		800AD94128A1998B00E6A529 /* edge-core in Resources */ = {isa = PBXBuildFile; fileRef = 800AD94028A1998B00E6A529 /* edge-core */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
@@ -36,14 +37,15 @@
 		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = DemoEdgeApp/Images.xcassets; sourceTree = "<group>"; };
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = DemoEdgeApp/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = DemoEdgeApp/main.m; sourceTree = "<group>"; };
-		1D0AE47A65C8663E3B452821 /* Pods-DemoEdgeApp-DemoEdgeAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DemoEdgeApp-DemoEdgeAppTests.release.xcconfig"; path = "Target Support Files/Pods-DemoEdgeApp-DemoEdgeAppTests/Pods-DemoEdgeApp-DemoEdgeAppTests.release.xcconfig"; sourceTree = "<group>"; };
-		6423831EA8574132BED9D8CC /* libPods-DemoEdgeApp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DemoEdgeApp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		6C97AB639B58BBB4B15BBE30 /* Pods-DemoEdgeApp-DemoEdgeAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DemoEdgeApp-DemoEdgeAppTests.debug.xcconfig"; path = "Target Support Files/Pods-DemoEdgeApp-DemoEdgeAppTests/Pods-DemoEdgeApp-DemoEdgeAppTests.debug.xcconfig"; sourceTree = "<group>"; };
+		19DD036661FB8D0DE3B46654 /* Pods-DemoEdgeApp-DemoEdgeAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DemoEdgeApp-DemoEdgeAppTests.release.xcconfig"; path = "Target Support Files/Pods-DemoEdgeApp-DemoEdgeAppTests/Pods-DemoEdgeApp-DemoEdgeAppTests.release.xcconfig"; sourceTree = "<group>"; };
+		2FCD72363BA5F4C5B603F4DB /* Pods-DemoEdgeApp-DemoEdgeAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DemoEdgeApp-DemoEdgeAppTests.debug.xcconfig"; path = "Target Support Files/Pods-DemoEdgeApp-DemoEdgeAppTests/Pods-DemoEdgeApp-DemoEdgeAppTests.debug.xcconfig"; sourceTree = "<group>"; };
+		316E34985E1CB571BD8CCF96 /* libPods-DemoEdgeApp-DemoEdgeAppTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DemoEdgeApp-DemoEdgeAppTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7C35953A2729F60E46510BE2 /* Pods-DemoEdgeApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DemoEdgeApp.release.xcconfig"; path = "Target Support Files/Pods-DemoEdgeApp/Pods-DemoEdgeApp.release.xcconfig"; sourceTree = "<group>"; };
+		800AD94028A1998B00E6A529 /* edge-core */ = {isa = PBXFileReference; lastKnownFileType = folder; name = "edge-core"; path = "../../android/app/src/main/assets/edge-core"; sourceTree = "<group>"; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = DemoEdgeApp/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		ABFE59519B596E51CEFDCCC0 /* libPods-DemoEdgeApp-DemoEdgeAppTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DemoEdgeApp-DemoEdgeAppTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		C0A881CF5CF3F2B244570E2A /* Pods-DemoEdgeApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DemoEdgeApp.debug.xcconfig"; path = "Target Support Files/Pods-DemoEdgeApp/Pods-DemoEdgeApp.debug.xcconfig"; sourceTree = "<group>"; };
-		D00AAFFCFCFDA5787532823F /* Pods-DemoEdgeApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DemoEdgeApp.release.xcconfig"; path = "Target Support Files/Pods-DemoEdgeApp/Pods-DemoEdgeApp.release.xcconfig"; sourceTree = "<group>"; };
+		D22B6882A9D1A0A478C4BC1B /* libPods-DemoEdgeApp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DemoEdgeApp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+		EEE45E02A3D930A980861948 /* Pods-DemoEdgeApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DemoEdgeApp.debug.xcconfig"; path = "Target Support Files/Pods-DemoEdgeApp/Pods-DemoEdgeApp.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,7 +53,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7EF68E3733C33B6898317E18 /* libPods-DemoEdgeApp-DemoEdgeAppTests.a in Frameworks */,
+				5153B704D470B8D7A66DB2D0 /* libPods-DemoEdgeApp-DemoEdgeAppTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,7 +61,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6172F2D35A4C3AA820D92908 /* libPods-DemoEdgeApp.a in Frameworks */,
+				3CECE6EB2DB012B8DDB2FEDE /* libPods-DemoEdgeApp.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -100,10 +102,18 @@
 			isa = PBXGroup;
 			children = (
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
-				6423831EA8574132BED9D8CC /* libPods-DemoEdgeApp.a */,
-				ABFE59519B596E51CEFDCCC0 /* libPods-DemoEdgeApp-DemoEdgeAppTests.a */,
+				D22B6882A9D1A0A478C4BC1B /* libPods-DemoEdgeApp.a */,
+				316E34985E1CB571BD8CCF96 /* libPods-DemoEdgeApp-DemoEdgeAppTests.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		808EF10A289C48C600A2F552 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				800AD94028A1998B00E6A529 /* edge-core */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 		832341AE1AAA6A7D00B99B32 /* Libraries */ = {
@@ -116,6 +126,7 @@
 		83CBB9F61A601CBA00E9B192 = {
 			isa = PBXGroup;
 			children = (
+				808EF10A289C48C600A2F552 /* Resources */,
 				13B07FAE1A68108700A75B9A /* DemoEdgeApp */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
 				00E356EF1AD99517003FC87E /* DemoEdgeAppTests */,
@@ -140,12 +151,11 @@
 		E233CBF5F47BEE60B243DCF8 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				C0A881CF5CF3F2B244570E2A /* Pods-DemoEdgeApp.debug.xcconfig */,
-				D00AAFFCFCFDA5787532823F /* Pods-DemoEdgeApp.release.xcconfig */,
-				6C97AB639B58BBB4B15BBE30 /* Pods-DemoEdgeApp-DemoEdgeAppTests.debug.xcconfig */,
-				1D0AE47A65C8663E3B452821 /* Pods-DemoEdgeApp-DemoEdgeAppTests.release.xcconfig */,
+				EEE45E02A3D930A980861948 /* Pods-DemoEdgeApp.debug.xcconfig */,
+				7C35953A2729F60E46510BE2 /* Pods-DemoEdgeApp.release.xcconfig */,
+				2FCD72363BA5F4C5B603F4DB /* Pods-DemoEdgeApp-DemoEdgeAppTests.debug.xcconfig */,
+				19DD036661FB8D0DE3B46654 /* Pods-DemoEdgeApp-DemoEdgeAppTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -156,12 +166,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "DemoEdgeAppTests" */;
 			buildPhases = (
-				A130D646172E58E1D159D8F2 /* [CP] Check Pods Manifest.lock */,
+				0D91098F450C6978AE15D4D4 /* [CP] Check Pods Manifest.lock */,
 				00E356EA1AD99517003FC87E /* Sources */,
 				00E356EB1AD99517003FC87E /* Frameworks */,
 				00E356EC1AD99517003FC87E /* Resources */,
-				077E01280D4B4AD18B2E1770 /* [CP] Embed Pods Frameworks */,
-				4E62BDF20514810D028A5FBF /* [CP] Copy Pods Resources */,
+				E4EF095C8A99D8AAC8D51E10 /* [CP] Embed Pods Frameworks */,
+				B9CCBAA13D3A10B9A2FA6363 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -177,14 +187,14 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "DemoEdgeApp" */;
 			buildPhases = (
-				3E482C27206C4DEF2FE45063 /* [CP] Check Pods Manifest.lock */,
+				1963EC5D60F16E272CC120D2 /* [CP] Check Pods Manifest.lock */,
 				FD10A7F022414F080027D42C /* Start Packager */,
 				13B07F871A680F5B00A75B9A /* Sources */,
 				13B07F8C1A680F5B00A75B9A /* Frameworks */,
 				13B07F8E1A680F5B00A75B9A /* Resources */,
 				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
-				C8AC78B0264D0F9F6F6D630E /* [CP] Embed Pods Frameworks */,
-				ADC9DDC32298B72B3CF5DC8E /* [CP] Copy Pods Resources */,
+				EA76DAA642E1B07601961F14 /* [CP] Embed Pods Frameworks */,
+				96732DF658883B1D26DAA637 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -245,6 +255,7 @@
 			files = (
 				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
+				800AD94128A1998B00E6A529 /* edge-core in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -265,63 +276,7 @@
 			shellPath = /bin/sh;
 			shellScript = "set -e\n\nexport NODE_BINARY=node\n../node_modules/react-native/scripts/react-native-xcode.sh\n";
 		};
-		077E01280D4B4AD18B2E1770 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-DemoEdgeApp-DemoEdgeAppTests/Pods-DemoEdgeApp-DemoEdgeAppTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-DemoEdgeApp-DemoEdgeAppTests/Pods-DemoEdgeApp-DemoEdgeAppTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DemoEdgeApp-DemoEdgeAppTests/Pods-DemoEdgeApp-DemoEdgeAppTests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		3E482C27206C4DEF2FE45063 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-DemoEdgeApp-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		4E62BDF20514810D028A5FBF /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-DemoEdgeApp-DemoEdgeAppTests/Pods-DemoEdgeApp-DemoEdgeAppTests-resources-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-DemoEdgeApp-DemoEdgeAppTests/Pods-DemoEdgeApp-DemoEdgeAppTests-resources-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DemoEdgeApp-DemoEdgeAppTests/Pods-DemoEdgeApp-DemoEdgeAppTests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		A130D646172E58E1D159D8F2 /* [CP] Check Pods Manifest.lock */ = {
+		0D91098F450C6978AE15D4D4 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -343,7 +298,29 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		ADC9DDC32298B72B3CF5DC8E /* [CP] Copy Pods Resources */ = {
+		1963EC5D60F16E272CC120D2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DemoEdgeApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		96732DF658883B1D26DAA637 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -360,7 +337,41 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DemoEdgeApp/Pods-DemoEdgeApp-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		C8AC78B0264D0F9F6F6D630E /* [CP] Embed Pods Frameworks */ = {
+		B9CCBAA13D3A10B9A2FA6363 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DemoEdgeApp-DemoEdgeAppTests/Pods-DemoEdgeApp-DemoEdgeAppTests-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DemoEdgeApp-DemoEdgeAppTests/Pods-DemoEdgeApp-DemoEdgeAppTests-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DemoEdgeApp-DemoEdgeAppTests/Pods-DemoEdgeApp-DemoEdgeAppTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E4EF095C8A99D8AAC8D51E10 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DemoEdgeApp-DemoEdgeAppTests/Pods-DemoEdgeApp-DemoEdgeAppTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DemoEdgeApp-DemoEdgeAppTests/Pods-DemoEdgeApp-DemoEdgeAppTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DemoEdgeApp-DemoEdgeAppTests/Pods-DemoEdgeApp-DemoEdgeAppTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EA76DAA642E1B07601961F14 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -429,7 +440,7 @@
 /* Begin XCBuildConfiguration section */
 		00E356F61AD99517003FC87E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6C97AB639B58BBB4B15BBE30 /* Pods-DemoEdgeApp-DemoEdgeAppTests.debug.xcconfig */;
+			baseConfigurationReference = 2FCD72363BA5F4C5B603F4DB /* Pods-DemoEdgeApp-DemoEdgeAppTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -456,7 +467,7 @@
 		};
 		00E356F71AD99517003FC87E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1D0AE47A65C8663E3B452821 /* Pods-DemoEdgeApp-DemoEdgeAppTests.release.xcconfig */;
+			baseConfigurationReference = 19DD036661FB8D0DE3B46654 /* Pods-DemoEdgeApp-DemoEdgeAppTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;
@@ -480,7 +491,7 @@
 		};
 		13B07F941A680F5B00A75B9A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C0A881CF5CF3F2B244570E2A /* Pods-DemoEdgeApp.debug.xcconfig */;
+			baseConfigurationReference = EEE45E02A3D930A980861948 /* Pods-DemoEdgeApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -506,7 +517,7 @@
 		};
 		13B07F951A680F5B00A75B9A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D00AAFFCFCFDA5787532823F /* Pods-DemoEdgeApp.release.xcconfig */;
+			baseConfigurationReference = 7C35953A2729F60E46510BE2 /* Pods-DemoEdgeApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
