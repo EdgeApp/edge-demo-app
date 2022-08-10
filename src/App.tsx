@@ -36,6 +36,11 @@ const App = () => {
         <Text>Loading...</Text>
       ) : edgeAccount == null ? (
         <LoginScreen
+          appId='com.mydomain.myapp'
+          appName='My App'
+          landingScreenText='Welcome to My App'
+          backgroundImage={require('../assets/app-background.jpg')}
+          primaryLogo={require('../assets/app-logo.png')}
           accountOptions={{}}
           context={edgeContext}
           onLogin={setEdgeAccount}
